@@ -1,5 +1,9 @@
-"use strict";
+'use strict';
 
-// $('.carousel').carousel({
-//   interval: 3000
-// })
+$(document).ready(function () {
+  $('.carousel').slick({
+    autoplay: true,
+    fade: true
+
+  });
+});

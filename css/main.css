@@ -1,3 +1,7 @@
+.carousel {
+  padding-top: 45px;
+  align: center; }
+
 .top-bar h1 {
   color: white; }
 
@@ -23,5 +27,8 @@
   .top-bar-section ul.left {
     width: 50%;
     padding-right: 100px; }
+  .top-bar-section ul.left li {
+    float: right; } }
+-right: 100px; }
   .top-bar-section ul.left li {
     float: right; } }
