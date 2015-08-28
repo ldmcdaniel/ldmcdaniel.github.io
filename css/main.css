@@ -1,5 +1,7 @@
-.logo h3 {
-  color: white; }
+.logo h2 {
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  margin-top: -6px; }
 
 @media only screen and (min-width: 40.063em) {
   nav {
@@ -9,22 +11,24 @@
   .logo-wrapper {
     position: relative; }
   .logo-wrapper .logo {
-    width: 200px;
-    height: 92px;
+    width: 310px;
+    height: 45px;
     position: absolute;
     left: 50%;
     right: 50%;
-    margin-left: -100px; }
+    margin-left: -140px; }
   .top-bar-section ul.right {
     width: 50%;
-    padding-left: 100px; }
+    padding-left: 155px; }
     .top-bar-section ul.right li {
-      float: left; }
+      float: left;
+      font-family: 'Waiting for the Sunrise', cursive; }
   .top-bar-section ul.left {
     width: 50%;
-    padding-right: 100px; }
+    padding-right: 155px; }
     .top-bar-section ul.left li {
-      float: right; } }
+      float: right;
+      font-family: 'Waiting for the Sunrise', cursive; } }
 
 .hobbits {
   width: 100%;
