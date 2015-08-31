@@ -48,8 +48,11 @@ h1, h2, h3 {
   text-align: center;
   position: absolute;
   bottom: 0px;
-  right: 5px;
-  left: 5px;
+  right: 50px;
+  left: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-family: 'Permanent Marker', cursive; }
+
+.footer {
+  text-align: center; }
