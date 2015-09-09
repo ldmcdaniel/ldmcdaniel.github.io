@@ -1,7 +1,7 @@
-.logo h2 {
+.logo h1 {
   color: white;
   font-family: 'Permanent Marker', cursive;
-  margin-top: -6px; }
+  margin-top: -11px; }
 
 h1, h2, h3 {
   font-family: 'Permanent Marker', cursive; }
@@ -14,21 +14,21 @@ h1, h2, h3 {
   .logo-wrapper {
     position: relative; }
   .logo-wrapper .logo {
-    width: 310px;
+    width: 342px;
     height: 45px;
     position: absolute;
     left: 50%;
     right: 50%;
-    margin-left: -140px; }
+    margin-left: -171px; }
   .top-bar-section ul.right {
     width: 50%;
-    padding-left: 155px; }
+    padding-left: 180px; }
     .top-bar-section ul.right li {
       float: left;
       font-family: 'Waiting for the Sunrise', cursive; }
   .top-bar-section ul.left {
     width: 50%;
-    padding-right: 155px; }
+    padding-right: 180px; }
     .top-bar-section ul.left li {
       float: right;
       font-family: 'Waiting for the Sunrise', cursive; } }
@@ -58,5 +58,6 @@ h1, h2, h3 {
   text-align: center;
   background: #333333;
   margin-top: 30px; }
-  .footer li a h3 {
-    color: white; }
+  .footer li {
+    color: white;
+    padding-top: 15px; }
