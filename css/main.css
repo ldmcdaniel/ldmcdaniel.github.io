@@ -1,44 +1,19 @@
-.logo h1 {
+h1.logo a {
   color: white;
-  font-family: 'Permanent Marker', cursive;
-  margin-top: -11px; }
+  font-size: 1.5em;
+  margin-top: -3px; }
 
 h1, h2, h3 {
   font-family: 'Permanent Marker', cursive; }
 
-@media only screen and (min-width: 640px) {
-  nav {
-    color: white; }
-    nav h3 {
-      color: white; }
-  .logo-wrapper {
-    position: relative; }
-  .logo-wrapper .logo {
-    width: 342px;
-    height: 45px;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    margin-left: -171px; }
-  .top-bar-section ul.right {
-    width: 50%;
-    padding-left: 180px; }
-    .top-bar-section ul.right li {
-      float: left;
-      font-family: 'Waiting for the Sunrise', cursive; }
-  .top-bar-section ul.left {
-    width: 50%;
-    padding-right: 180px; }
-    .top-bar-section ul.left li {
-      float: right;
-      font-family: 'Waiting for the Sunrise', cursive; } }
+.topSpace {
+  margin-top: 30px; }
 
 .hobbits {
   width: 100%;
   height: auto;
   margin-bottom: 30px;
-  position: relative;
-  padding-top: 45px; }
+  position: relative; }
 
 .gandalf {
   position: absolute;
@@ -47,9 +22,9 @@ h1, h2, h3 {
 .quote {
   text-align: center;
   position: absolute;
-  top: 50px;
-  right: 50px;
-  left: 50px;
+  top: 30px;
+  right: 150px;
+  left: 150px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-family: 'Permanent Marker', cursive; }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" ng-app="hobbitHole">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,65 +11,33 @@
   </head>
   <body>
     <header>
-      <div class="fixed">
-        <nav data-topbar class="top-bar">
-          <section class="top-bar-section">
-            <div class="logo-wrapper">
-              <div class="logo">
-                <h1>Lucas McDaniel</h1>
-              </div>
-            </div>
-            <ul class="left">
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">About Me</a></li>
-            </ul>
+      <div class="fixed contain-to-grid">
+        <nav data-topbar role="navigation" class="top-bar">
+          <div class="off-canvas-wrap">
+            <main class="inner-wrap"></main>
+          </div>
+          <ul class="title-area">
+            <li class="name">
+              <h1 class="logo"><a href="#/">Lucas McDaniel</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section"><!-- Right Nav Section -->
             <ul class="right">
-              <li><a href="#">Sample Work</a></li>
-              <li><a href="#">Contact Me</a></li>
-            </ul>
+            </ul><!-- Left Nav Section -->
+            <ul class="left"></ul>
           </section>
         </nav>
       </div>
     </header>
-    <div class="hobbits"><img src="/assets/IMG_20120421_085644.jpg">
-      <h3 class="quote">"All we have to decide<br />is what to do<br />with the time that is given us."<br />--Gandalf</h3>
-    </div>
-    <div class="row">
-      <div class="small-12 columns">
-        <div class="row container">
-          <div class="large-4 columns">
-            <h1>About me:</h1>
-          </div>
-          <div class="large-8 columns">
-            <p>I am a passionate junior software developer with a desire to help others improve their lives through efficient and pragmatic application design.  I am a current student at <a href="http://nashvillesoftwareschool.com/" target="_blank">Nashville Software School</a> and will be showing off my work with the rest of <a href="https://twitter.com/edstros/status/637732579307835392" target="_blank"> my cohort</a> on <a href="http://nashvillesoftwareschool.com/calendar/events/" target="_blank">demo day--September 25, 2015 from 11:00am -2:00pm.</a> I would like to use my knowledge, expertise, and enthusiasm to help others simplify and improve life in these modern times.</p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="medium-6 columns">
-            <h2>Tank U</h2>
-            <p>A <a href="https://en.wikipedia.org/wiki/Tower_defense" target="_blank"> tower defense </a> game where you play as the defensive captain of a team of turret commanders.  Using your resources carefully, you must defend from the incoming onslaught of tanks with their eyes set on destroying your home city.  For each enemy you defeat, you gain resources to strengthen you forces and hopefully save everyone from the brink of destruction.</p>
-            <p>The game is built with <a href="http://phaser.io/" target="_blank"> Phaser</a>, an HTML5 game framework.  The complexity of the game is the dynacism of the turrets.  They are set to rotate and fire at enemy tanks only when they are within a certain range.</p>
-          </div>
-          <div class="medium-6 columns"><a href="http://ldmcdaniel.com/tank-u" target="_blank" class="th"><img src="/assets/title-screen.png"></a></div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="medium-4 columns"><a href="https://github.com/ldmcdaniel/MNPW-Services" target="_blank" class="th"><img src="/assets/recycle_logo.jpg"></a></div>
-          <div class="medium-8 columns">
-            <h2>Nashville Public Works</h2>
-            <p>The Nashville recycling app is a set-it-and-forget-it style app for trash, recycling, and brush collection.  Set your valid Nashville address and you will be sent a push notification the night before your trash or recycling need to be out for pickup.  A notification for brush collection can be configured up to one week prior to the pickup date to allow time to gather leaves, sticks, brush, and trees for collection.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div ng-view class="eyes"></div>
     <div class="footer">
       <div class="row">
         <div class="small-12 columns">
-          <ul class="small-block-grid-2 large-block-grid-4">
+          <ul class="small-block-grid-4">
             <li><a href="mailto:ldmcdaniel@gmail.com?subject=I Love Your Site&amp;body=Hello:  I was on your portfolio site and I wanted to ..." target="_blank"><i class="fa fa-envelope fa-4x"></i></a></li>
             <li><a href="https://github.com/ldmcdaniel" target="_blank"><i class="fa fa-github fa-4x"></i></a></li>
-            <li><a href="https://twitter.com/@ldmcdaniel4real" target="_blank"><i class="fa fa-twitter fa-4x"></i></a></li>
+            <li><a href="https://twitter.com/@ldmcdaniel109" target="_blank"><i class="fa fa-twitter fa-4x"></i></a></li>
             <li><a href="https://www.linkedin.com/in/ldmcdaniel" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a></li>
           </ul>
         </div>
