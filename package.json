@@ -1,7 +1,7 @@
 {
-  "name": "ldmcdaniel.com",
+  "name": "ldmcdaniel.github.io",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "Portfolio Site",
   "author": "Lucas McDaniel <ldmcdaniel@gmail.com>",
   "private": true,
   "scripts": {

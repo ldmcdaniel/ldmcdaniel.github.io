@@ -1,6 +1,6 @@
-# ldmcdaniel.com
+# ldmcdaniel.github.io
 
-> A Vue.js project
+> Portfolio Site
 
 ## Build Setup
 
