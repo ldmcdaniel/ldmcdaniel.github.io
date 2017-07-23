@@ -1,15 +1,21 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/components/Hello';
+import Main from '@/components/Main';
+import Home from '@/components/Home';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
+      path: '/main',
+      name: 'Main',
+      component: Main,
+    },
+    {
       path: '/',
-      name: 'Hello',
-      component: Hello,
+      name: 'Home',
+      component: Home,
     },
   ],
 });
