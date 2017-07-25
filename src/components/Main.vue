@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <img src="../assets/Lucas_in_NZ.jpeg">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -28,9 +29,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+body {
+  background-color: white;
+  background: none;
+}
 .main {
-  background-color: 
   h1, h2 {
     font-weight: normal;
   }
