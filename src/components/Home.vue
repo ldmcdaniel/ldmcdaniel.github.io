@@ -47,6 +47,7 @@ export default {
   font-style: normal;
 }
 .home {
+  text-align: center;
   h1 {
     font-weight: normal;
     margin-top: 35vh;
