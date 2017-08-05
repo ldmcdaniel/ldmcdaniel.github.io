@@ -1,7 +1,7 @@
 <template>
   <div class="home" @click="go_to_main">
-    <h1>{{ msg }}</h1>
-    <h5 v-show="showInstructions">Click for more ^</h5>
+    <h1><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
+    <h5 v-show="showInstructions">{{ msg }}</h5>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      msg: 'Lucas McDaniel',
+      msg: 'Full Stack Developer',
       showInstructions: false,
     };
   },
@@ -46,22 +46,27 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
-body {
-  height: 90vh;
-  background: linear-gradient(0deg, #067d05, #0c9309 33%, #239b22 66%, #39a638);
-  overflow-y: hidden;
-}
 .home {
   h1 {
-    color: white;
     font-weight: normal;
     margin-top: 35vh;
     font-size: 5rem;
     font-family: 'Bungee Shade', cursive;
+    span {
+      &:nth-child(1) {
+        color: #239b22;
+      }
+      &:nth-child(2) {
+        color: #78c2f3;
+      }
+      &:nth-child(3) {
+        color: #ff0009;
+      }
+    }
   }
   h5 {
     font-family: 'Bungee', cursive;
-    color: white;
+    color: #067d05;
   }
 }
 </style>
