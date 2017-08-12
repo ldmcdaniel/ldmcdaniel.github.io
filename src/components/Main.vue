@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <b-navbar toggleable type="inverse" variant="success" sticky="true">
+    <b-navbar type="inverse" variant="inverse" fixed="top" toggle-breakpoint="sm">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       <b-link class="navbar-brand" to="/">
         <span>Lucas McDaniel</span>
@@ -45,13 +45,6 @@ export default {
 </script>
 
 <style lang="scss">
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-body {
-  background-color: white;
-  background: none;
-}
 .main {
   text-align: center;
   h1, h2 {
