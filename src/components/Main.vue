@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <b-navbar type="inverse" variant="inverse" fixed="top" toggle-breakpoint="sm">
+    <b-navbar toggleable type="inverse" variant="inverse" fixed="top" toggle-breakpoint="md">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       <b-link class="navbar-brand" to="/">
         <span>Lucas McDaniel</span>
@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main {
   text-align: center;
   h1, h2 {
@@ -65,6 +65,7 @@ export default {
    color: #5700ff;
   }
   .jumbotron {
+    padding: 55px 0 0;
     max-width: 100%;
   }
 }
