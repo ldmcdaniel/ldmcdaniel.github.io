@@ -1,21 +1,27 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Main from '@/components/Main';
+import Blog from '@/components/Blog';
 import Home from '@/components/Home';
+import MyMusic from '@/components/MyMusic';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/main',
-      name: 'Main',
-      component: Main,
+      path: '/blog',
+      name: 'blog',
+      component: Blog,
     },
     {
       path: '/',
       name: 'Home',
       component: Home,
+    },
+    {
+      path: '/music',
+      name: 'MyMusic',
+      component: MyMusic,
     },
   ],
 });

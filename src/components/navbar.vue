@@ -1,15 +1,12 @@
 <template>
-  <div class="main">
-    <b-navbar toggleable type="inverse" variant="success" sticky="true">
+  <div class="home">
+    <b-navbar toggleable type="inverse" variant="info" fixed="">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-      <b-link class="navbar-brand" to="/">
-        <span>Lucas McDaniel</span>
-      </b-link>
       <b-collapse is-nav id="nav_collapse">
         <b-nav is-nav-bar>
-          <b-nav-item to="/Main">About Me</b-nav-item>
-          <b-nav-item>My Music</b-nav-item>
-          <b-nav-item href="https://github.com/ldmcdaniel/django_blog">Blog</b-nav-item>
+          <b-nav-item to="/">About Me</b-nav-item>
+          <b-nav-item to="/music">My Music</b-nav-item>
+          <b-nav-item to="/blog">Blog</b-nav-item>
         </b-nav>
         <b-nav is-nav-bar class="ml-auto">
           <b-nav-item-dropdown text="Projects" right>
@@ -30,49 +27,75 @@
         </b-nav>
       </b-collapse>
     </b-navbar>
-    <img class="jumbotron" src="../assets/Hobbiton.jpeg">
   </div>
 </template>
 
 <script>
+import Router from '../router';
+
 export default {
-  name: 'Main',
+  name: 'NavBar',
   data() {
     return {
+      position: '',
+      showInstructions: false,
     };
+  },
+  methods: {
+    go_to_main() {
+      Router.push('Main');
+    },
+    go_to_blog() {
+      Router.push('Blog');
+    },
+    setTimer() {
+      setTimeout(() => this.negateInstructionsValue(), 2000);
+    },
+    negateInstructionsValue() {
+      this.showInstructions = !this.showInstructions;
+    },
+  },
+  mounted() {
+    this.setTimer();
   },
 };
 </script>
 
-<style lang="scss">
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-body {
-  background-color: white;
-  background: none;
+<style lang="scss" scoped>
+@font-face {
+  font-family: 'Bungee Shade';
+  src: url('../assets/BungeeShade-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-.main {
+@font-face {
+  font-family: 'Bungee';
+  src: url('../assets/Bungee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.home {
   text-align: center;
-  h1, h2 {
+  h1 {
     font-weight: normal;
+    margin-top: 35vh;
+    font-size: 5rem;
+    font-family: 'Bungee Shade', cursive;
+    span {
+      &:nth-child(1) {
+        color: #239b22;
+      }
+      &:nth-child(2) {
+        color: #78c2f3;
+      }
+      &:nth-child(3) {
+        color: #ff0009;
+      }
+    }
   }
-
-  ul {
-   list-style-type: none;
-   padding: 0;
-  }
-
-  li {
-   display: inline-block;
-   margin: 0 10px;
-  }
-
-  a {
-   color: #5700ff;
-  }
-  .jumbotron {
-    max-width: 100%;
+  h5 {
+    font-family: 'Bungee', cursive;
+    color: #067d05;
   }
 }
 </style>
