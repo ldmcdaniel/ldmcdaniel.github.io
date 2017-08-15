@@ -1,6 +1,15 @@
 <template>
-  <div class="home">
-    <h1><span>Welcome to </span><span>my blog.  </span><span>Coming soon!</span></h1>
+  <div class="home container">
+    <div class="row">
+      <div class="col-sm">
+        <h1><span>Welcome to my Music. </span><span>Coming soon! </span><!--<span>I have:</span>--></h1>
+        <!--<p>A Master of Music with a Bachelor of Fine Arts in classical guitar performance</p>
+        <p>Played guitar and bass in small and medium sized jazz ensembles</p>
+        <p>Appeared in Belmont University's Christmas at Belmont</p>
+        <p>Taught general-music, choir, rock band, ukulele, guitar, mathematics, special education, and English to grades K-12 over 7 years of my professional life in two countries</p>
+        <p>Orff Level !, Kodaly Level I, and have extensive experience in Music Learning Theory.  You could say I like music.  That would probably be true.</p>-->
+      </div>
+    </div>
   </div>
 </template>
 
@@ -8,7 +17,7 @@
 import Router from '../router';
 
 export default {
-  name: 'Blog',
+  name: 'MyMusic',
   data() {
     return {
     };
@@ -64,7 +73,7 @@ export default {
       }
     }
   }
-  h5 {
+  p, h5 {
     font-family: 'Bungee', cursive;
     color: #067d05;
   }

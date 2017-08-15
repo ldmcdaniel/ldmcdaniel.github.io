@@ -5,54 +5,46 @@
       <h5 v-show="showInstructions"></h5>
     </div>
     <img class="jumbotron" src="../assets/Hobbiton.jpeg">
-    <div class="container">
+    <div class="container hidden">
       <div class="row">
       <div class="col-sm">
-        <b-card title="Card Title"
-                img="https://lorempixel.com/600/300/food/5/"
-                img-alt="Image"
+        <b-card title="Tank-U"
                 tag="article"
                 class="mb-2">
           <p class="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Tank-U is a tower defense game built with Phaser.js
           </p>
-          <b-button href="#" variant="primary">Go somewhere</b-button>
+          <b-button href="https://ldmcdaniel.github.io/tank-u/" variant="primary">Play Tank-U</b-button>
         </b-card>
       </div>
       <div class="col-sm">
-        <b-card title="Card Title"
-                img="https://lorempixel.com/600/300/food/5/"
-                img-alt="Image"
+        <b-card title="dotfiles"
                 tag="article"
                 class="mb-2">
           <p class="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Dotfiles are one of the only things we will work for our whole career.  Keep them version controlled.  Check mine out!
           </p>
-          <b-button href="#" variant="primary">Go somewhere</b-button>
+          <b-button href="https://github.com/ldmcdaniel/dotfiles/" variant="primary">View Dotfiles Repo</b-button>
         </b-card>
       </div>
       <div class="col-sm">
-        <b-card title="Card Title"
-                img="https://lorempixel.com/600/300/food/5/"
-                img-alt="Image"
+        <b-card title="Calculator"
                 tag="article"
                 class="mb-2">
           <p class="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            I made a calculator with JavaScript.
           </p>
-          <b-button href="#" variant="primary">Go somewhere</b-button>
+          <b-button href="https://ldmcdaniel.github.io/ionic-calculator/" variant="primary">Play With the Calculator</b-button>
         </b-card>
       </div>
       <div class="col-sm">
-        <b-card title="Card Title"
-                img="https://lorempixel.com/600/300/food/5/"
-                img-alt="Image"
+        <b-card title="Fitness"
                 tag="article"
                 class="mb-2">
           <p class="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            A Vue.js fitness app built for my needs.
           </p>
-          <b-button href="#" variant="primary">Go somewhere</b-button>
+          <b-button href="https://github.com/ldmcdaniel/fitness/" variant="primary">Check out the fitness app!</b-button>
         </b-card>
       </div>
     </div>
@@ -113,7 +105,7 @@ export default {
   h1 {
     font-weight: normal;
     margin-top: 35vh;
-    height: 63vh;
+    height: 57vh;
     font-size: 5rem;
     font-family: 'Bungee Shade', cursive;
     span {

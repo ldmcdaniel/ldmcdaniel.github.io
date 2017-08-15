@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <b-navbar toggleable type="inverse" variant="info" fixed="top">
+    <b-navbar toggleable type="inverse" variant="info" fixed="">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       <b-collapse is-nav id="nav_collapse">
         <b-nav is-nav-bar>
           <b-nav-item to="/">About Me</b-nav-item>
-          <b-nav-item>My Music</b-nav-item>
-          <b-nav-item to="/Blog">Blog</b-nav-item>
+          <b-nav-item to="/music">My Music</b-nav-item>
+          <b-nav-item to="/blog">Blog</b-nav-item>
         </b-nav>
         <b-nav is-nav-bar class="ml-auto">
           <b-nav-item-dropdown text="Projects" right>
@@ -34,10 +34,10 @@
 import Router from '../router';
 
 export default {
-  name: 'Home',
+  name: 'NavBar',
   data() {
     return {
-      msg: 'Full Stack Developer',
+      position: '',
       showInstructions: false,
     };
   },
