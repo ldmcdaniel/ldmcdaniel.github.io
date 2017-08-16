@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <b-navbar toggleable type="inverse" variant="info" fixed="">
+  <div class="navbar">
+    <b-navbar toggleable type="light" variant="link" :fixed="position">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       <b-collapse is-nav id="nav_collapse">
         <b-nav is-nav-bar>
@@ -37,7 +37,6 @@ export default {
   name: 'NavBar',
   data() {
     return {
-      position: '',
       showInstructions: false,
     };
   },
@@ -55,6 +54,9 @@ export default {
       this.showInstructions = !this.showInstructions;
     },
   },
+  props: [
+    'position',
+  ],
   mounted() {
     this.setTimer();
   },
@@ -74,28 +76,14 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
-.home {
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('../assets/PermanentMarker.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar {
   text-align: center;
-  h1 {
-    font-weight: normal;
-    margin-top: 35vh;
-    font-size: 5rem;
-    font-family: 'Bungee Shade', cursive;
-    span {
-      &:nth-child(1) {
-        color: #239b22;
-      }
-      &:nth-child(2) {
-        color: #78c2f3;
-      }
-      &:nth-child(3) {
-        color: #ff0009;
-      }
-    }
-  }
-  h5 {
-    font-family: 'Bungee', cursive;
-    color: #067d05;
-  }
+  font-family: 'Permanent Marker', cursive;
 }
 </style>
