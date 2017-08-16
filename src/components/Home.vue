@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="home">
     <div class="container-fluid">
       <h1><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
       <h5 v-show="showInstructions"></h5>
@@ -7,47 +7,53 @@
     <img class="jumbotron" src="../assets/Hobbiton.jpeg">
     <div class="container hidden">
       <div class="row">
-      <div class="col-sm">
-        <b-card title="Tank-U"
-                tag="article"
-                class="mb-2">
-          <p class="card-text">
-            Tank-U is a tower defense game built with Phaser.js
-          </p>
-          <b-button href="https://ldmcdaniel.github.io/tank-u/" variant="primary">Play Tank-U</b-button>
-        </b-card>
+        <div class="col-sm">
+          <b-card title="Tank-U"
+                  tag="article"
+                  class="mb-2">
+            <p class="card-text">
+              Tank-U is a tower defense game built with Phaser.js.
+            </p>
+            <b-button class="play-button" href="https://ldmcdaniel.github.io/tank-u/" variant="primary">
+              Play Tank-U
+            </b-button>
+          </b-card>
+        </div>
+        <div class="col-sm">
+          <b-card title="dotfiles"
+                  tag="article"
+                  class="mb-2">
+            <p class="card-text">
+              Dotfiles are one of the only things we will work for our whole career.  Keep them version controlled.  Check mine out!
+            </p>
+            <b-button class="play-button" href="https://github.com/ldmcdaniel/dotfiles/" variant="primary">
+              View Dotfiles Repo
+            </b-button>
+          </b-card>
+        </div>
+        <div class="col-sm">
+          <b-card title="Calculator"
+                  tag="article"
+                  class="mb-2">
+            <p class="card-text">
+              I made a calculator with JavaScript.
+            </p>
+            <b-button class="play-button" href="https://ldmcdaniel.github.io/ionic-calculator/" variant="primary">
+              Use the Calculator
+            </b-button>
+          </b-card>
+        </div>
+        <div class="col-sm">
+          <b-card title="Fitness"
+                  tag="article"
+                  class="mb-2">
+            <p class="card-text">
+              A Vue.js fitness app built for my needs.
+            </p>
+            <b-button class="play-button" href="https://github.com/ldmcdaniel/fitness/" variant="primary">Check it out!</b-button>
+          </b-card>
+        </div>
       </div>
-      <div class="col-sm">
-        <b-card title="dotfiles"
-                tag="article"
-                class="mb-2">
-          <p class="card-text">
-            Dotfiles are one of the only things we will work for our whole career.  Keep them version controlled.  Check mine out!
-          </p>
-          <b-button href="https://github.com/ldmcdaniel/dotfiles/" variant="primary">View Dotfiles Repo</b-button>
-        </b-card>
-      </div>
-      <div class="col-sm">
-        <b-card title="Calculator"
-                tag="article"
-                class="mb-2">
-          <p class="card-text">
-            I made a calculator with JavaScript.
-          </p>
-          <b-button href="https://ldmcdaniel.github.io/ionic-calculator/" variant="primary">Play With the Calculator</b-button>
-        </b-card>
-      </div>
-      <div class="col-sm">
-        <b-card title="Fitness"
-                tag="article"
-                class="mb-2">
-          <p class="card-text">
-            A Vue.js fitness app built for my needs.
-          </p>
-          <b-button href="https://github.com/ldmcdaniel/fitness/" variant="primary">Check out the fitness app!</b-button>
-        </b-card>
-      </div>
-    </div>
     </div>
   </div>
 </template>
@@ -99,13 +105,16 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
-.main {
-  font-family: 'Permanent Marker', cursive;
+.home {
+  font-family: 'Bungee', cursive;
   text-align: center;
+  .card-text {
+    font-family: 'Permanent Marker', cursive;
+  }
   h1 {
     font-weight: normal;
     margin-top: 35vh;
-    height: 57vh;
+    height: 55vh;
     font-size: 5rem;
     font-family: 'Bungee Shade', cursive;
     span {
