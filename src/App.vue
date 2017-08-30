@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <nav-bar position=""></nav-bar>
+    <nav-bar></nav-bar>
     <router-view></router-view>
-    <nav-bar position=""></nav-bar>
+    <foot-bar></foot-bar>
   </div>
 </template>
 
 <script>
 import NavBar from './components/navbar';
+import FootBar from './components/footer';
 
 export default {
   name: 'app',
@@ -17,6 +18,7 @@ export default {
   },
   components: {
     NavBar,
+    FootBar,
   },
 
 };

@@ -3,8 +3,7 @@
     <nav class="navbar is-transparent">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          Lucas McDaniel
-          <!--<img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">-->
+          <img src="../assets/profilePic.jpg" alt="My profile picture" height="28">
         </a>
         <a class="navbar-item is-hidden-desktop" href="https://github.com/ldmcdaniel" target="_blank">
           <span class="icon" style="color: #333;">
@@ -12,69 +11,35 @@
           </span>
         </a>
         <a class="navbar-item is-hidden-desktop" href="https://twitter.com/Ldmcdaniel109" target="_blank">
-          <span class="icon" style="color: #55acee;">
+          <span class="icon" style="color: #1da1f2;">
             <i class="fa fa-twitter"></i>
           </span>
         </a>
         <a class="navbar-item is-hidden-desktop" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
-          <span class="icon" style="color: #55acee;">
+          <span class="icon" style="color: #0077B5;">
             <i class="fa fa-linkedin"></i>
           </span>
         </a>
-        <a class="navbar-item is-hidden-desktop" href="mailto:ldmcdaniel@gmail.com" target="_blank">
-          <span class="icon" style="color: #55acee;">
-            <i class="fa fa-envelope"></i>
-          </span>
-        </a>
+        <!--<a class="navbar-item is-hidden-desktop" href="mailto:ldmcdaniel@gmail.com" target="_blank">-->
+          <!--<span class="icon" style="color: #d95040;">-->
+            <!--<i class="fa fa-envelope"></i>-->
+          <!--</span>-->
+        <!--</a>-->
         <div class="navbar-burger burger" data-target="navMenuTransparentExample">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-      <div id="navMenuTransparentExample" class="navbar-menu">
+      <div class="navbar-menu">
         <div class="navbar-start">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link  is-active" href="/documentation/overview/start/">
+          <div class="navbar-item">
+            <a href="/documentation/overview/start/">
               About Me 
             </a>
-            <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item " href="/documentation/overview/start/">
-                Overview
-              </a>
-              <a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
-                Modifiers
-              </a>
-              <a class="navbar-item " href="http://bulma.io/documentation/columns/basics/">
-                Columns
-              </a>
-              <a class="navbar-item " href="http://bulma.io/documentation/layout/container/">
-                Layout
-              </a>
-              <a class="navbar-item " href="http://bulma.io/documentation/form/general/">
-                Form
-              </a>
-              <a class="navbar-item " href="http://bulma.io/documentation/elements/box/">
-                Elements
-              </a>
-                <a class="navbar-item is-active" href="http://bulma.io/documentation/components/breadcrumb/">
-                  Components
-                </a>
-              <hr class="navbar-divider">
-              <div class="navbar-item">
-                <div>
-                  <p class="is-size-6-desktop">
-                    <strong class="has-text-info">0.5.1</strong>
-                  </p>
-                    <small>
-                      <a class="bd-view-all-versions" href="/versions">View all versions</a>
-                    </small>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link " href="http://bulma.io/blog/">
+          <div class="navbar-item">
+            <a href="/#/blog">
               Blog
             </a>
             <div id="blogDropdown" class="navbar-dropdown is-boxed" data-style="width: 18rem;">
@@ -218,18 +183,39 @@
           </div>
         </div>
         <div class="navbar-end">
-          <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+          <a class="navbar-item is-hidden-desktop" href="https://github.com/ldmcdaniel" target="_blank">
             <span class="icon" style="color: #333;">
               <i class="fa fa-github"></i>
             </span>
           </a>
-          <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
-            <span class="icon" style="color: #55acee;">
+          <a class="navbar-item is-hidden-desktop" href="https://twitter.com/Ldmcdaniel109" target="_blank">
+            <span class="icon" style="color: #1da1f2;">
               <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          <a class="navbar-item is-hidden-desktop" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
+            <span class="icon" style="color: #0077B5;">
+              <i class="fa fa-linkedin"></i>
             </span>
           </a>
           <div class="navbar-item">
             <div class="field is-grouped">
+              <p class="control">
+                <a class="button" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
+                  <span class="icon" style="color: #0077B5;">
+                    <i class="fa fa-linkedin"></i>
+                  </span>
+                  <span>LinkedIn</span>
+                </a>
+              </p>
+              <!--<p class="control">-->
+                <!--<a class="button" href="mailto:ldmcdaniel@gmail.com" target="_blank">-->
+                  <!--<span class="icon" style="color: #d95040;">-->
+                    <!--<i class="fa fa-envelope"></i>-->
+                  <!--</span>-->
+                  <!--<span>Gmail</span>-->
+                <!--</a>-->
+              <!--</p>-->
               <p class="control">
                 <a class="bd-tw-button button"
                     data-social-network="Twitter"

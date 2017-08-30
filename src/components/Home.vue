@@ -5,56 +5,6 @@
       <h5 v-show="showInstructions"></h5>
     </div>
     <img class="jumbotron" src="../assets/Hobbiton.jpeg">
-    <div class="container hidden">
-      <div class="row">
-        <div class="col-sm">
-          <!--<b-card title="Tank-U"-->
-                  <!--tag="article"-->
-                  <!--class="mb-2">-->
-            <!--<p class="card-text">-->
-              <!--Tank-U is a tower defense game built with Phaser.js.-->
-            <!--</p>-->
-            <!--<b-button class="play-button" href="https://ldmcdaniel.github.io/tank-u/" variant="primary">-->
-              <!--Play Tank-U-->
-            <!--</b-button>-->
-          <!--</b-card>-->
-        </div>
-        <div class="col-sm">
-          <!--<b-card title="dotfiles"-->
-                  <!--tag="article"-->
-                  <!--class="mb-2">-->
-            <!--<p class="card-text">-->
-              <!--Dotfiles are one of the only things we will work for our whole career.  Keep them version controlled.  Check mine out!-->
-            <!--</p>-->
-            <!--<b-button class="play-button" href="https://github.com/ldmcdaniel/dotfiles/" variant="primary">-->
-              <!--View Dotfiles Repo-->
-            <!--</b-button>-->
-          <!--</b-card>-->
-        </div>
-        <div class="col-sm">
-          <!--<b-card title="Calculator"-->
-                  <!--tag="article"-->
-                  <!--class="mb-2">-->
-            <!--<p class="card-text">-->
-              <!--I made a calculator with JavaScript.-->
-            <!--</p>-->
-            <!--<b-button class="play-button" href="https://ldmcdaniel.github.io/ionic-calculator/" variant="primary">-->
-              <!--Use the Calculator-->
-            <!--</b-button>-->
-          <!--</b-card>-->
-        </div>
-        <div class="col-sm">
-          <!--<b-card title="Fitness"-->
-                  <!--tag="article"-->
-                  <!--class="mb-2">-->
-            <!--<p class="card-text">-->
-              <!--A Vue.js fitness app built for my needs.-->
-            <!--</p>-->
-            <!--<b-button class="play-button" href="https://github.com/ldmcdaniel/fitness/" variant="primary">Check it out!</b-button>-->
-          <!--</b-card>-->
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
