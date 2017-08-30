@@ -1,15 +1,21 @@
 <template>
   <div class="home">
-    <div class="">
+    <div class="header">
+      <nav-bar></nav-bar>
       <h1><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
-      <h5 v-show="showInstructions"></h5>
     </div>
-    <img class="jumbotron" src="../assets/Hobbiton.jpeg">
+    <div class="body">
+    </div>
+    <div class="header">
+      <h1><span>Full </span><span>Stack </span><span>Developer</span></h1>
+    </div>
+    <foot-bar></foot-bar>
   </div>
 </template>
 
 <script>
 import NavBar from './navbar';
+import FootBar from './footer';
 
 export default {
   name: 'Home',
@@ -32,6 +38,7 @@ export default {
   },
   components: {
     NavBar,
+    FootBar,
   },
 };
 </script>
@@ -58,34 +65,36 @@ export default {
 .home {
   font-family: 'Bungee', cursive;
   text-align: center;
-  .card-text {
-    font-family: 'Permanent Marker', cursive;
-  }
-  h1 {
-    font-weight: normal;
-    margin-top: 35vh;
-    height: 55vh;
-    font-size: 5rem;
-    font-family: 'Bungee Shade', cursive;
-    span {
-      &:nth-child(1) {
-        color: #239b22;
-      }
-      &:nth-child(2) {
-        color: #78c2f3;
-      }
-      &:nth-child(3) {
-        color: #ff0009;
+  .header {
+    height: 100vh;
+    position: relative;
+    h1 {
+      font-weight: normal;
+      font-size: 5rem;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Bungee Shade', cursive;
+      span {
+        &:nth-child(1) {
+          color: #239b22;
+        }
+        &:nth-child(2) {
+          color: #78c2f3;
+        }
+        &:nth-child(3) {
+          color: #ff0009;
+        }
       }
     }
   }
-  h5 {
-    font-family: 'Bungee', cursive;
-    color: #067d05;
-  }
-  .jumbotron {
-    padding: 0;
-    max-width: 100%;
+  .body {
+    height: 100vh;
+    background-image: url('../assets/Hobbiton.jpeg');
+    background-position: center;
+    background-size: cover;
   }
 }
 </style>

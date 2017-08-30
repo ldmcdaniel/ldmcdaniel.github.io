@@ -34,7 +34,7 @@
       <div class="navbar-menu">
         <div class="navbar-start">
           <div class="navbar-item">
-            <a href="/documentation/overview/start/">
+            <a href="/#/">
               About Me 
             </a>
           </div>
