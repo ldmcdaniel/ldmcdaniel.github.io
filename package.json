@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
-    "bootstrap-vue": "^0.20.2",
+    "bulma": "^0.5.1",
+    "font-awesome": "^4.7.0",
     "vue": "^2.3.3",
     "vue-router": "^2.6.0"
   },

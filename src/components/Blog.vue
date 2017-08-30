@@ -1,11 +1,17 @@
 <template>
-  <div class="home">
-    <h1><span>Welcome to </span><span>my blog.  </span><span>Coming soon!</span></h1>
+  <div class="">
+    <div class="home">
+      <nav-bar></nav-bar>
+      <h1><span>Welcome to </span><span>my blog.  </span><span>Coming soon!</span></h1>
+    </div>
+    <foot-bar></foot-bar>
   </div>
 </template>
 
 <script>
 import Router from '../router';
+import NavBar from './navbar';
+import FootBar from './footer';
 
 export default {
   name: 'Blog',
@@ -28,6 +34,8 @@ export default {
     this.setTimer();
   },
   components: {
+    NavBar,
+    FootBar,
   },
 };
 </script>
@@ -47,11 +55,16 @@ export default {
 }
 .home {
   text-align: center;
+  height: 100vh;
+  position: relative;
   h1 {
     font-weight: normal;
-    margin: 40vh 0;
     font-size: 5rem;
     font-family: 'Bungee Shade', cursive;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     span {
       &:nth-child(1) {
         color: #239b22;
@@ -63,10 +76,6 @@ export default {
         color: #ff0009;
       }
     }
-  }
-  h5 {
-    font-family: 'Bungee', cursive;
-    color: #067d05;
   }
 }
 </style>
