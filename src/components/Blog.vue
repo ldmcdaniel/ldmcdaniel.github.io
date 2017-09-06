@@ -1,10 +1,12 @@
 <template>
-  <div class="">
-    <div class="home">
+  <div class="columns is-mobile">
+    <div class="column">
       <nav-bar></nav-bar>
-      <h1><span>Welcome to </span><span>my blog.  </span><span>Coming soon!</span></h1>
+      <div class="blog">
+        <h1><span>Welcome to </span><span>my blog.  </span><span>Coming soon!</span></h1>
+      </div>
+      <foot-bar></foot-bar>
     </div>
-    <foot-bar></foot-bar>
   </div>
 </template>
 
@@ -53,7 +55,7 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
-.home {
+.blog {
   text-align: center;
   height: 100vh;
   position: relative;

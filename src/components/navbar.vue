@@ -5,51 +5,25 @@
         <a class="navbar-item" href="/">
           <img src="../assets/profilePic.jpg" alt="My profile picture" height="28">
         </a>
-        <a class="navbar-item is-hidden-desktop" href="https://github.com/ldmcdaniel" target="_blank">
-          <span class="icon" style="color: #333;">
-            <i class="fa fa-github"></i>
-          </span>
-        </a>
-        <a class="navbar-item is-hidden-desktop" href="https://twitter.com/Ldmcdaniel109" target="_blank">
-          <span class="icon" style="color: #1da1f2;">
-            <i class="fa fa-twitter"></i>
-          </span>
-        </a>
-        <a class="navbar-item is-hidden-desktop" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
-          <span class="icon" style="color: #0077B5;">
-            <i class="fa fa-linkedin"></i>
-          </span>
-        </a>
-        <!--<a class="navbar-item is-hidden-desktop" href="mailto:ldmcdaniel@gmail.com" target="_blank">-->
-          <!--<span class="icon" style="color: #d95040;">-->
-            <!--<i class="fa fa-envelope"></i>-->
-          <!--</span>-->
-        <!--</a>-->
-        <div class="navbar-burger burger" data-target="navMenuTransparentExample">
+        <div class="navbar-burger burger" v-bind:class="{ 'is-active': showNav }" @click="toggleSideNav()">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" v-bind:class="{ 'is-active': showNav }">
         <div class="navbar-start">
           <div class="navbar-item">
-            <a href="/#/">
-              About Me 
-            </a>
+            <a href="/#/">About Me</a>
           </div>
           <div class="navbar-item">
-            <a href="/#/blog">
-              Blog
-            </a>
+            <a href="/#/blog">Blog</a>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <div class="navbar-link">
-              Projects
-            </div>
+            <div class="navbar-link">Projects</div>
             <div id="moreDropdown" class="navbar-dropdown is-boxed">
-              <a class="navbar-item " href="https://ldmcdaniel.github.io/tank-u/">
-                <div class="level is-mobile">
+              <a class="navbar-item" href="https://ldmcdaniel.github.io/tank-u/">
+                <div class="level">
                   <div class="level-right">
                     <div class="level-item">
                       <span class="icon has-text-info">
@@ -68,8 +42,8 @@
                   </div>
                 </div>
               </a>
-              <a class="navbar-item " href="https://github.com/ldmcdaniel/dotfiles/">
-                <div class="level is-mobile">
+              <a class="navbar-item" href="https://github.com/ldmcdaniel/dotfiles/">
+                <div class="level">
                   <div class="level-right">
                     <div class="level-item">
                       <span class="icon has-text-info">
@@ -88,8 +62,8 @@
                   </div>
                 </div>
               </a>
-              <a class="navbar-item " href="https://ldmcdaniel.github.io/ionic-calculator/">
-                <div class="level is-mobile">
+              <a class="navbar-item" href="https://ldmcdaniel.github.io/ionic-calculator/">
+                <div class="level">
                   <div class="level-right">
                     <div class="level-item">
                       <span class="icon has-text-info">
@@ -108,8 +82,8 @@
                   </div>
                 </div>
               </a>
-              <a class="navbar-item " href="https://github.com/ldmcdaniel/fitness/">
-                <div class="level is-mobile">
+              <a class="navbar-item" href="https://github.com/ldmcdaniel/fitness/">
+                <div class="level">
                   <div class="level-right">
                     <div class="level-item">
                       <span class="icon has-text-info">
@@ -147,7 +121,7 @@
               <i class="fa fa-linkedin"></i>
             </span>
           </a>
-          <div class="navbar-item">
+          <div class="navbar-item is-hidden-mobile">
             <div class="field is-grouped">
               <p class="control">
                 <a class="button" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
@@ -157,14 +131,6 @@
                   <span>LinkedIn</span>
                 </a>
               </p>
-              <!--<p class="control">-->
-                <!--<a class="button" href="mailto:ldmcdaniel@gmail.com" target="_blank">-->
-                  <!--<span class="icon" style="color: #d95040;">-->
-                    <!--<i class="fa fa-envelope"></i>-->
-                  <!--</span>-->
-                  <!--<span>Gmail</span>-->
-                <!--</a>-->
-              <!--</p>-->
               <p class="control">
                 <a class="bd-tw-button button"
                     data-social-network="Twitter"
@@ -202,6 +168,7 @@ export default {
   data() {
     return {
       showInstructions: false,
+      showNav: false,
     };
   },
   methods: {
@@ -216,6 +183,9 @@ export default {
     },
     negateInstructionsValue() {
       this.showInstructions = !this.showInstructions;
+    },
+    toggleSideNav() {
+      this.showNav = !this.showNav;
     },
   },
   props: [

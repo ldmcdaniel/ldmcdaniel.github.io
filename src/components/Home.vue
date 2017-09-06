@@ -1,36 +1,16 @@
 <template>
-  <div class="home">
-    <div class="columns">
-      <div v-bind:class="{ 'is-three-quarters': !isHidden }" class="column">
-        <section v-on:click="toggleSideNav">
-          <div class="header">
-            <nav-bar></nav-bar>
-            <h1><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
-          </div>
-          <div class="body">
-          </div>
-          <div class="header">
-            <h1><span>Full </span><span>Stack </span><span>Developer</span></h1>
-          </div>
-          <foot-bar></foot-bar>
-        </section>
+  <div class="home columns is-mobile">
+    <div class="column">
+      <nav-bar></nav-bar>
+      <div class="header">
+        <h1><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
       </div>
-      <div v-bind:class="{ 'is-hidden': isHidden }" class="column">
-        <aside class="menu">
-          <ul class="menu-list">
-            <li><a>About Me</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Projects</a>
-              <ul>
-                <li><a>Tank-U</a></li>
-                <li><a>Dotfiles</a></li>
-                <li><a>Calculator</a></li>
-                <li><a>Fitness</a></li>
-              </ul>
-            </li>
-          </ul>
-        </aside>
+      <div class="body">
       </div>
+      <div class="header">
+        <h1><span>Full </span><span>Stack </span><span>Developer</span></h1>
+      </div>
+      <foot-bar></foot-bar>
     </div>
   </div>
 </template>
@@ -45,7 +25,7 @@ export default {
     return {
       msg: 'Full Stack Developer',
       showInstructions: false,
-      isHidden: true,
+      isSideNavHidden: true,
     };
   },
   methods: {
@@ -54,9 +34,6 @@ export default {
     },
     negateInstructionsValue() {
       this.showInstructions = !this.showInstructions;
-    },
-    toggleSideNav() {
-      this.isHidden = !this.isHidden;
     },
   },
   mounted() {
