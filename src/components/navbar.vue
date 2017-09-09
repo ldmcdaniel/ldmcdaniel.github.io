@@ -2,27 +2,45 @@
   <div class="">
     <nav class="navbar is-transparent">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
+        <router-link class="navbar-item" to="/">
           <img src="../assets/profilePic.jpg" alt="My profile picture" height="28">
-        </a>
-        <div class="navbar-burger burger" v-bind:class="{ 'is-active': showNav }" @click="toggleSideNav()">
+        </router-link>
+        <!--<a class="navbar-item is-hidden-desktop" href="https://github.com/ldmcdaniel" target="_blank">-->
+          <!--<span class="icon" style="color: #333;">-->
+            <!--<i class="fa fa-github"></i>-->
+          <!--</span>-->
+        <!--</a>-->
+        <!--<a class="navbar-item is-hidden-desktop" href="https://twitter.com/Ldmcdaniel109" target="_blank">-->
+          <!--<span class="icon" style="color: #1da1f2;">-->
+            <!--<i class="fa fa-twitter"></i>-->
+          <!--</span>-->
+        <!--</a>-->
+        <!--<a class="navbar-item is-hidden-desktop" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">-->
+          <!--<span class="icon" style="color: #0077B5;">-->
+            <!--<i class="fa fa-linkedin"></i>-->
+          <!--</span>-->
+        <!--</a>-->
+        <div class="navbar-burger burger" :class="{ 'is-active': showNav }" @click="toggleSideNav()">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-      <div class="navbar-menu" v-bind:class="{ 'is-active': showNav }">
+      <div class="navbar-menu" :class="{ 'is-active': showNav }">
         <div class="navbar-start">
           <div class="navbar-item">
-            <a href="/#/">About Me</a>
+            <router-link to="/about">About Me</router-link>
           </div>
           <div class="navbar-item">
-            <a href="/#/blog">Blog</a>
+            <router-link to="/blog">Blog</router-link>
+          </div>
+          <div class="navbar-item">
+            <router-link to="/music">My Music</router-link>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
             <div class="navbar-link">Projects</div>
             <div id="moreDropdown" class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="https://ldmcdaniel.github.io/tank-u/">
+              <a class="navbar-item" href="https://ldmcdaniel.github.io/tank-u/" target="_blank">
                 <div class="level">
                   <div class="level-right">
                     <div class="level-item">
@@ -42,7 +60,7 @@
                   </div>
                 </div>
               </a>
-              <a class="navbar-item" href="https://github.com/ldmcdaniel/dotfiles/">
+              <a class="navbar-item" href="https://github.com/ldmcdaniel/dotfiles/" target="_blank">
                 <div class="level">
                   <div class="level-right">
                     <div class="level-item">
@@ -62,7 +80,7 @@
                   </div>
                 </div>
               </a>
-              <a class="navbar-item" href="https://ldmcdaniel.github.io/ionic-calculator/">
+              <a class="navbar-item" href="https://ldmcdaniel.github.io/ionic-calculator/" target="_blank">
                 <div class="level">
                   <div class="level-right">
                     <div class="level-item">
@@ -82,7 +100,7 @@
                   </div>
                 </div>
               </a>
-              <a class="navbar-item" href="https://github.com/ldmcdaniel/fitness/">
+              <a class="navbar-item" href="https://github.com/ldmcdaniel/fitness/" target="_blank">
                 <div class="level">
                   <div class="level-right">
                     <div class="level-item">
@@ -121,7 +139,7 @@
               <i class="fa fa-linkedin"></i>
             </span>
           </a>
-          <div class="navbar-item is-hidden-mobile">
+          <div class="navbar-item">
             <div class="field is-grouped">
               <p class="control">
                 <a class="button" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
@@ -145,7 +163,7 @@
                 </a>
               </p>
               <p class="control">
-                <a class="button is-primary" href="https://github.com/ldmcdaniel">
+                <a class="button is-primary" href="https://github.com/ldmcdaniel" target="_blank">
                   <span class="icon">
                     <i class="fa fa-github"></i>
                   </span>

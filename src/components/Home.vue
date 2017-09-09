@@ -1,23 +1,25 @@
 <template>
-  <div class="home columns is-mobile">
-    <div class="column">
-      <nav-bar></nav-bar>
-      <div class="header">
-        <h1><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
-      </div>
-      <div class="body">
-      </div>
-      <div class="header">
-        <h1><span>Full </span><span>Stack </span><span>Developer</span></h1>
-      </div>
-      <foot-bar></foot-bar>
+  <div class="home is-mobile">
+    <div class="header section-one">
+      <h1><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
+    </div>
+    <div class="body section-two">
+      <div class="topper"></div>
+      <div class="section-body"></div>
+      <div class="section-footer"></div>
+    </div>
+    <div class="header section-three">
+      <h1><span>Full </span><span>Stack </span><span>Developer</span></h1>
+    </div>
+    <div class="body section-four">
+    </div>
+    <div class="header section-five">
+      <h1><span>Full </span><span>Stack </span><span>Developer</span></h1>
     </div>
   </div>
 </template>
 
 <script>
-import NavBar from './navbar';
-import FootBar from './footer';
 
 export default {
   name: 'Home',
@@ -40,8 +42,6 @@ export default {
     this.setTimer();
   },
   components: {
-    NavBar,
-    FootBar,
   },
 };
 </script>
@@ -69,11 +69,11 @@ export default {
   font-family: 'Bungee', cursive;
   text-align: center;
   .header {
-    height: 100vh;
+    height: calc(100vh - 52px);
     position: relative;
     h1 {
       font-weight: normal;
-      font-size: 5rem;
+      font-size: 8rem;
       text-align: center;
       position: absolute;
       left: 50%;
@@ -98,6 +98,18 @@ export default {
     background-image: url('../assets/Hobbiton.jpeg');
     background-position: center;
     background-size: cover;
+    .topper {
+      height: 12vh;
+      background-color: #ff0009;
+    }
+    .section-body {
+      height: 80vh;
+      background-color: white;
+    }
+    .section-footer {
+      height: 8vh;
+      background-color: #78c2f3;
+    }
   }
 }
 </style>
