@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <h1><span>Welcome to </span><span>my blog.  </span><span>Coming soon!</span></h1>
+    <h1><span>Welcome to </span><span>About Me.  </span><span>Coming soon!</span></h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Router from '../router';
 
 export default {
-  name: 'Blog',
+  name: 'AboutMe',
   data() {
     return {
     };

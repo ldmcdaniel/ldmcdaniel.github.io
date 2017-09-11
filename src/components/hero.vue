@@ -1,24 +1,21 @@
 <template>
-  <div class="blog">
-    <h1><span>Welcome to </span><span>my blog.  </span><span>Coming soon!</span></h1>
+  <div class="hero">
+    <h1 v-show="showInstructions"><span>Lucas </span><span>Mc</span><span>Daniel</span></h1>
   </div>
 </template>
 
 <script>
-import Router from '../router';
 
 export default {
-  name: 'Blog',
+  name: 'Hero',
   data() {
     return {
+      showInstructions: false,
     };
   },
   methods: {
-    go_home() {
-      Router.push('Home');
-    },
     setTimer() {
-      setTimeout(() => this.negateInstructionsValue(), 2000);
+      setTimeout(() => this.negateInstructionsValue(), 800);
     },
     negateInstructionsValue() {
       this.showInstructions = !this.showInstructions;
@@ -39,24 +36,24 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Bungee';
-  src: url('../assets/Bungee-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-.blog {
-  text-align: center;
-  height: 100vh;
+.hero {
+  @media screen and (orientation:portrait) {
+    height: calc(100vh - 96px);
+  }
   position: relative;
+  height: calc(200vh - 96px);
+  background-image: url('../assets/Lucas_McDaniel_Milford_Sound_NZ.jpg');
+  background-position: top;
+  background-size: cover;
   h1 {
     font-weight: normal;
-    font-size: 5rem;
-    font-family: 'Bungee Shade', cursive;
-    position: relative;
-    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+    position: absolute;
     left: 50%;
+    top: 16%;
     transform: translate(-50%, -50%);
+    font-family: 'Bungee Shade', cursive;
     span {
       &:nth-child(1) {
         color: #239b22;
