@@ -31,70 +31,78 @@
       </div>
       <div class="body">
         <div class="section-body">
-          <div class="card" v-show="tanku">
-            <div class="card-header">
-              <div class="card-header-title">Tank-U</div>
-              <div class="card-header-icon">
-                <span class="icon has-text-info">
-                  <i class="fa fa-gamepad"></i>
-                </span>
+          <a href="https://lucasmcdaniel.com/tank-u/" target="_blank">
+            <div class="card" v-show="tanku">
+              <div class="card-header">
+                <div class="card-header-title">Tank-U</div>
+                <div class="card-header-icon">
+                  <span class="icon has-text-info">
+                    <i class="fa fa-gamepad"></i>
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="card-image">
-              <figure class="image">
-                <img src="../assets/Tank-U_Screenshot.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="content">Tank-U is a tower-defense game build with Phaser.js.</div>
-          </div>
-          <div class="card" v-show="dotfiles">
-            <div class="card-header">
-              <div class="card-header-title">dotfiles</div>
-              <div class="card-header-icon">
-                <span class="icon has-text-info">
-                  <i class="fa fa-laptop"></i>
-                </span>
+              <div class="card-image">
+                <figure class="image">
+                  <img src="../assets/Tank-U_Screenshot.png" alt="Placeholder image">
+                </figure>
               </div>
+              <div class="content">Tank-U is a tower-defense game build with Phaser.js.</div>
             </div>
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="content">Dotfiles are a project I will work on for my whole career.</div>
-          </div>
-          <div class="card" v-show="calculator">
-            <div class="card-header">
-              <div class="card-header-title">Calculator</div>
-              <div class="card-header-icon">
-                <span class="icon has-text-info">
-                  <i class="fa fa-calculator"></i>
-                </span>
+          </a>
+          <a href="https://github.com/ldmcdaniel/dotfiles/" target="_blank">
+            <div class="card" v-show="dotfiles">
+              <div class="card-header">
+                <div class="card-header-title">dotfiles</div>
+                <div class="card-header-icon">
+                  <span class="icon has-text-info">
+                    <i class="fa fa-laptop"></i>
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="content">A calculator app built for mobile with Ionic.</div>
-          </div>
-          <div class="card" v-show="fitness">
-            <div class="card-header">
-              <div class="card-header-title">Fitness</div>
-              <div class="card-header-icon">
-                <span class="icon has-text-info">
-                  <i class="fa fa-hand-rock-o"></i>
-                </span>
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="../assets/vim.png" alt="Placeholder image">
+                </figure>
               </div>
+              <div class="content">Dotfiles are a project I will work on for my whole career.</div>
             </div>
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
+          </a>
+          <a href="https://lucasmcdaniel.com/ionic-calculator/" target="_blank">
+            <div class="card" v-show="calculator">
+              <div class="card-header">
+                <div class="card-header-title">Calculator</div>
+                <div class="card-header-icon">
+                  <span class="icon has-text-info">
+                    <i class="fa fa-calculator"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="../assets/calculator.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="content">A calculator app built for mobile with Ionic.</div>
             </div>
-            <div class="content">A custom fitness application built with Vue.js.</div>
-          </div>
+          </a>
+          <a href="https://github.com/ldmcdaniel/fitness/" target="_blank">
+            <div class="card" v-show="fitness">
+              <div class="card-header">
+                <div class="card-header-title">Fitness</div>
+                <div class="card-header-icon">
+                  <span class="icon has-text-info">
+                    <i class="fa fa-hand-rock-o"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="../assets/fitness.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="content">A custom fitness application built with Vue.js.</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

@@ -2,24 +2,11 @@
   <div class="">
     <nav class="navbar is-transparent">
       <div class="navbar-brand">
-        <router-link class="navbar-item" to="/">
-          <img src="../assets/profilePic.jpg" alt="My profile picture" height="28">
+        <router-link to="/">
+          <figure class="image is-64x64">
+            <img src="../assets/profilePic.jpg" alt="My profile picture">
+          </figure>
         </router-link>
-        <!--<a class="navbar-item is-hidden-desktop" href="https://github.com/ldmcdaniel" target="_blank">-->
-          <!--<span class="icon" style="color: #333;">-->
-            <!--<i class="fa fa-github"></i>-->
-          <!--</span>-->
-        <!--</a>-->
-        <!--<a class="navbar-item is-hidden-desktop" href="https://twitter.com/Ldmcdaniel109" target="_blank">-->
-          <!--<span class="icon" style="color: #1da1f2;">-->
-            <!--<i class="fa fa-twitter"></i>-->
-          <!--</span>-->
-        <!--</a>-->
-        <!--<a class="navbar-item is-hidden-desktop" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">-->
-          <!--<span class="icon" style="color: #0077B5;">-->
-            <!--<i class="fa fa-linkedin"></i>-->
-          <!--</span>-->
-        <!--</a>-->
         <div class="navbar-burger burger" :class="{ 'is-active': showNav }" @click="toggleSideNav()">
           <span></span>
           <span></span>
@@ -36,91 +23,6 @@
           </div>
           <div class="navbar-item">
             <router-link to="/music">My Music</router-link>
-          </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <div class="navbar-link">Projects</div>
-            <div id="moreDropdown" class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="https://ldmcdaniel.github.io/tank-u/" target="_blank">
-                <div class="level">
-                  <div class="level-right">
-                    <div class="level-item">
-                      <span class="icon has-text-info">
-                        <i class="fa fa-gamepad"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="level-left">
-                    <div class="level-item">
-                      <p>
-                        <strong>Tank-U</strong>
-                        <br>
-                        <small>A tower-defense game built with Phaser.js</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a class="navbar-item" href="https://github.com/ldmcdaniel/dotfiles/" target="_blank">
-                <div class="level">
-                  <div class="level-right">
-                    <div class="level-item">
-                      <span class="icon has-text-info">
-                        <i class="fa fa-laptop"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="level-left">
-                    <div class="level-item">
-                      <p>
-                        <strong>dotfiles</strong>
-                        <br>
-                        <small>Self installing custom vim and dotfiles</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a class="navbar-item" href="https://ldmcdaniel.github.io/ionic-calculator/" target="_blank">
-                <div class="level">
-                  <div class="level-right">
-                    <div class="level-item">
-                      <span class="icon has-text-info">
-                        <i class="fa fa-calculator"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="level-left">
-                    <div class="level-item">
-                      <p>
-                        <strong>Calculator</strong>
-                        <br>
-                        <small>A calculator app built for mobile with Ionic</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a class="navbar-item" href="https://github.com/ldmcdaniel/fitness/" target="_blank">
-                <div class="level">
-                  <div class="level-right">
-                    <div class="level-item">
-                      <span class="icon has-text-info">
-                        <i class="fa fa-hand-rock-o"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="level-left">
-                    <div class="level-item">
-                      <p>
-                        <strong>Fitness</strong>
-                        <br>
-                        <small>A custom fitness application built with Vue.js</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
         <div class="navbar-end">
@@ -139,10 +41,10 @@
               <i class="fa fa-linkedin"></i>
             </span>
           </a>
-          <div class="navbar-item">
+          <div class="navbar-item is-hidden-touch">
             <div class="field is-grouped">
               <p class="control">
-                <a class="button" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
+                <a class="button is-medium" href="https://www.linkedin.com/in/ldmcdaniel/" target="_blank">
                   <span class="icon" style="color: #0077B5;">
                     <i class="fa fa-linkedin"></i>
                   </span>
@@ -150,7 +52,7 @@
                 </a>
               </p>
               <p class="control">
-                <a class="bd-tw-button button"
+                <a class="bd-tw-button button is-medium"
                     data-social-network="Twitter"
                     data-social-action="tweet"
                     data-social-target="http://ldmcdaniel.com"
@@ -159,11 +61,11 @@
                   <span class="icon">
                     <i class="fa fa-twitter"></i>
                   </span>
-                  <span>Tweet</span>
+                  <span>Twitter</span>
                 </a>
               </p>
               <p class="control">
-                <a class="button is-primary" href="https://github.com/ldmcdaniel" target="_blank">
+                <a class="button is-primary is-medium" href="https://github.com/ldmcdaniel" target="_blank">
                   <span class="icon">
                     <i class="fa fa-github"></i>
                   </span>
@@ -179,55 +81,27 @@
 </template>
 
 <script>
-import Router from '../router';
 
 export default {
   name: 'NavBar',
   data() {
     return {
-      showInstructions: false,
       showNav: false,
     };
   },
   methods: {
-    go_to_main() {
-      Router.push('Main');
-    },
-    go_to_blog() {
-      Router.push('Blog');
-    },
-    setTimer() {
-      setTimeout(() => this.negateInstructionsValue(), 2000);
-    },
-    negateInstructionsValue() {
-      this.showInstructions = !this.showInstructions;
-    },
     toggleSideNav() {
       this.showNav = !this.showNav;
     },
   },
   props: [
-    'position',
   ],
   mounted() {
-    this.setTimer();
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@font-face {
-  font-family: 'Bungee Shade';
-  src: url('../assets/BungeeShade-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Bungee';
-  src: url('../assets/Bungee-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 @font-face {
   font-family: 'Permanent Marker';
   src: url('../assets/PermanentMarker.ttf') format('truetype');
@@ -237,5 +111,18 @@ export default {
 .navbar {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
+  figure.image {
+    margin: 1rem;
+  }
+  .navbar-burger {
+    height: 96px;
+    width: 96px;
+  }
+  .navbar-start {
+    font-size: 2rem;
+  }
+  .fa {
+    font-size: 2rem;
+  }
 }
 </style>

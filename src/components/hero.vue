@@ -38,10 +38,10 @@ export default {
 }
 .hero {
   @media screen and (orientation:portrait) {
-    height: calc(100vh - 52px);
+    height: calc(100vh - 96px);
   }
   position: relative;
-  height: calc(200vh - 52px);
+  height: calc(200vh - 96px);
   background-image: url('../assets/Lucas_McDaniel_Milford_Sound_NZ.jpg');
   background-position: top;
   background-size: cover;
